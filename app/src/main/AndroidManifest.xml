@@ -2,6 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.jay.shakunaku">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -17,7 +23,22 @@
             </intent-filter>
         </activity>
         <activity android:name=".Activities.LoginActivity" />
-        <activity android:name=".Activities.RegistrationActivity"></activity>
+        <activity android:name=".Activities.RegistrationActivity" />
+        <activity android:name=".ContainerActivity" />
+        <activity
+            android:name=".Profile.SettingsActivity"
+            android:parentActivityName=".ContainerActivity" />
+        <activity
+            android:name=".Profile.EditProfileActivity"
+            android:parentActivityName=".Profile.SettingsActivity" />
+        <activity android:name=".Activities.InitialAccountSettings" />
+        <activity android:name=".Timeline_Posting.GalleryActivity" />
+        <activity android:name=".Timeline_Posting.ShareActivity" />
+        <activity android:name=".Profile.ImageCropperActivity" />
+        <activity android:name=".PostAcvitity" />
+        <activity android:name=".Comments.CommentsActivity" />
+        <activity android:name=".Timeline_Homepage.SearchActivity" />
+        <activity android:name=".Timeline_Homepage.ViewProfileActivity"></activity>
     </application>
 
 </manifest>

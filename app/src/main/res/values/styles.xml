@@ -1,4 +1,5 @@
-<resources>
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
@@ -6,6 +7,41 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:windowActivityTransitions" tools:targetApi="lollipop">true</item>
+
+        <!-- enable window content transitions -->
+        <item name="android:windowContentTransitions" tools:targetApi="lollipop">true</item>
+
+
+        <item name="android:windowEnterTransition" tools:targetApi="lollipop">@transition/fading_transition</item>
+        <item name="android:windowExitTransition" tools:targetApi="lollipop">@transition/fading_transition</item>
+
+
+    </style>
+
+    <style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+
+        <item name="colorControlNormal">@color/toolbar_color_control_normal</item>
+    </style>
+
+    <style name="DialogSlide1">
+        <item name="android:windowEnterAnimation">@anim/slide_low</item>
+        <item name="android:windowExitAnimation">@anim/slide_top</item>
+    </style>
+
+    <style name="DialogSlide2">
+        <item name="android:windowEnterAnimation">@anim/slide_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_down</item>
+    </style>
+
+    <style name="BottomTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorHeight">0dp</item>
+        <item name="tabPaddingStart">0dp</item>
+        <item name="tabPaddingEnd">0dp</item>
+        <item name="tabGravity">fill</item>
+        <item name="tabMode">fixed</item>
+
     </style>
 
 </resources>

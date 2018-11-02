@@ -1,7 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#f44336</color>
-    <color name="colorPrimaryDark">#f44336</color>
-    <color name="colorAccent">#FF4081</color>
-    <color name="colorBlue">#303F9F</color>
+    <color name="colorPrimary">#E6392F</color>
+    <color name="colorPrimaryDark">#E6392F</color>
+    <color name="colorAccent">#4a4b4a</color>
+    <color name="colorAccent1">#FF4081</color>
+    <color name="colorBlue">#4F5486</color>
+    <color name="boldTextColor">#4a4b4a</color>
+    <color name="toolbar_color_control_normal">#fff</color>
+    <color name="grayColor">#c2c2d2</color>
+
+    <color name="colorPrimaryTransparent">#47e6392f</color>
+
+    <color name="yellow">#F6A623</color>
+
+    <color name="violet">#673AB7</color>
+    <color name="violet_trans_80">#BF673AB7</color>
+
+
+    <color name="orange">#F07B3F</color>
+
+    <color name="grey">#949494</color>
+    <color name="red">#FE3824</color>
+    <color name="red_logout">#E95354</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="white_transparent_80">#BFFFFFFF</color>
+
+    <!--shimmer-->
+    <color name="demo_light_transparent">#16000000</color>
+    <color name="demo_dark_transparent">#24000000</color>
+
+    <color name="black">#000000</color>
+
+    <color name="black_25_transparent">#40000000</color>
+
+    <color name="transparent">#00000000</color>
+
+
+    <color name="grey_trans">#c7c7c7</color>
+
+
+    <color name="green">#70c050</color>
+
+
 </resources>

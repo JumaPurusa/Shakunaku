@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="0dp">
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:shape="rectangle"
+            card_view:cardCornerRadius="5dp"
+            card_view:cardElevation="4dp"
+            android:background="@android:color/white">
+
+            <RelativeLayout
+                android:background="@drawable/elevated_background"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:id="@+id/comment_profile_image"
+                    android:src="@drawable/default_profit"
+                    app:civ_border_color="@android:color/black"
+                    app:civ_border_width="0.5dp"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/linear1"
+                    android:layout_toRightOf="@+id/comment_profile_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp">
+
+                    <TextView
+                        android:id="@+id/comment_username"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="17sp"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold"
+                        android:layout_marginRight="16dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="14sp"
+                        android:id="@+id/comment_time_posted"/>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:layout_below="@+id/linear1"
+                    android:layout_alignLeft="@+id/linear1"
+                    android:id="@+id/comment"/>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+</merge>

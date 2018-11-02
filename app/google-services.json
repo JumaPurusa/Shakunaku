@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1044177839604",
+    "firebase_url": "https://shakunaku.firebaseio.com",
+    "project_id": "shakunaku",
+    "storage_bucket": "shakunaku.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1044177839604:android:6820019c1190ee4e",
+        "android_client_info": {
+          "package_name": "com.example.jay.shakunaku"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1044177839604-jehch850cb656182ng45unkafn280lm8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jay.shakunaku",
+            "certificate_hash": "f33358b37f2385e306529e988112a22fafb2d953"
+          }
+        },
+        {
+          "client_id": "1044177839604-1ojbjgvnggveg39u5icvv18tu51j0t2v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfhpM8EHK4AaeQCEjmDmRqCgQf2QP0s3Y"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1044177839604-1ojbjgvnggveg39u5icvv18tu51j0t2v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

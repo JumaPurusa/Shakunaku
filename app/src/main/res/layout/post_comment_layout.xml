@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:id="@+id/edit_profile_photo"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/default_profit"
+            app:civ_border_color="@android:color/black"
+            app:civ_border_width="0.5dp"
+            android:layout_gravity="center"
+            />
+
+        <EditText
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Add a comment..."
+            android:textSize="16sp"
+            android:background="@null"
+            android:id="@+id/posted_comment"
+            android:layout_weight="1"
+            android:layout_marginLeft="16dp"/>
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:id="@+id/post_sign"
+            android:src="@drawable/ic_send"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+</merge>

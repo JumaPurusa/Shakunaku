@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white">
+
+    
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:paddingLeft="10dp"
+            android:paddingBottom="16dp"
+            android:paddingRight="10dp"
+            android:id="@+id/main"
+            android:background="@drawable/grey_border_bottom">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:id="@+id/comment_profile_image"
+                android:src="@drawable/default_profit"
+                app:civ_border_color="@android:color/black"
+                app:civ_border_width="0.5dp"
+                android:layout_gravity="center"
+                />
+
+            <LinearLayout
+                android:id="@+id/linear1"
+                android:layout_toRightOf="@+id/comment_profile_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp">
+
+                <TextView
+                    android:id="@+id/comment_username"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/username"
+                    android:textSize="17sp"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:layout_marginRight="16dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2/8/2018"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="14sp"
+                    android:id="@+id/comment_time_posted"/>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_below="@+id/linear1"
+                android:layout_alignLeft="@+id/linear1"
+                android:id="@+id/comment"/>
+            
+            <RelativeLayout
+                android:id="@+id/linear2"
+                android:layout_alignLeft="@+id/comment"
+                android:layout_below="@+id/comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/likes_dislike"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textStyle="bold"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="14sp"
+                        android:id="@+id/comment_likes"
+                        android:layout_alignParentLeft="true"/>
+
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/comment_like"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/ic_white_heart"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/comment_likes"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reply"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="14sp"
+                    android:id="@+id/comment_reply"
+                    android:layout_toRightOf="@+id/likes_dislike"/>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+</RelativeLayout>

@@ -16,10 +16,10 @@
         <ImageView
             android:layout_width="130dp"
             android:layout_height="130dp"
-            android:src="@drawable/ic_mood_black_24dp"
+            android:src="@mipmap/smiley_tongue"
             android:layout_centerHorizontal="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginBottom="35dp"/>
+            android:layout_marginBottom="45dp"/>
     </RelativeLayout>
 
     <LinearLayout
@@ -29,33 +29,44 @@
         android:layout_weight="2.7">
 
         <EditText
+            android:id="@+id/username"
             android:layout_marginRight="48dp"
             android:layout_marginLeft="48dp"
             android:layout_marginTop="16dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/username"
+            android:inputType="textEmailAddress"
+            android:backgroundTint="@android:color/darker_gray"
+            android:textColorHint="@android:color/darker_gray"
             android:fontFamily="sans-serif"/>
 
         <EditText
+            android:id="@+id/password"
             android:layout_marginRight="48dp"
             android:layout_marginLeft="48dp"
             android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/password"
+            android:backgroundTint="@android:color/darker_gray"
+            android:textColorHint="@android:color/darker_gray"
+            android:inputType="textPassword"
             android:fontFamily="sans-serif"/>
 
         <Button
+            android:id="@+id/sign_in"
             android:layout_marginRight="48dp"
             android:layout_marginLeft="48dp"
             android:layout_marginTop="10dp"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:background="@color/colorPrimary"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimaryDark"
             android:text="@string/sign_in"
             android:textAllCaps="false"
-            android:textColor="@android:color/white"/>
+            android:textColor="@android:color/white"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"/>
 
         <TextView
             android:layout_marginRight="48dp"
@@ -70,11 +81,13 @@
             android:layout_marginLeft="48dp"
             android:layout_marginTop="30dp"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:background="@color/colorBlue"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorBlue"
             android:text="@string/sign_in_with_facebook"
             android:textAllCaps="false"
-            android:textColor="@android:color/white"/>
+            android:textColor="@android:color/white"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp"/>
 
         <LinearLayout
             android:layout_marginRight="48dp"
@@ -106,7 +119,7 @@
                 android:text="@string/sign_up"
                 android:textSize="15sp"
                 android:layout_marginLeft="4dp"
-                android:textColor="@color/colorPrimary"/>
+                android:textColor="@color/colorPrimaryDark"/>
         </LinearLayout>
 
     </LinearLayout>

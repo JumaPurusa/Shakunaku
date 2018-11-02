@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/card_view">
+
+    <RelativeLayout
+        android:layout_below="@id/layout0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp">
+
+        <com.example.jay.shakunaku.Utils.SquareImageView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/media_image"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:adjustViewBounds="true"
+            android:transitionName="postImage"
+            android:scaleType="centerCrop"/>
+
+        <ProgressBar
+            android:layout_marginLeft="20dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:indeterminateDrawable="@drawable/drawable_image_loading"
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"/>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

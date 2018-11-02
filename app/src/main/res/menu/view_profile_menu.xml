@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/direct_message"
+        android:title="@string/direct_message"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/mute"
+        android:title="@string/mute"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/report"
+        android:title="@string/report"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/block_unblock"
+          android:title="Block/Unblock"
+          app:showAsAction="never"/>
+
+    <item android:id="@+id/share"
+          android:title="Share"
+          app:showAsAction="never"/>
+
+</menu>
